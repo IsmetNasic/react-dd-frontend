@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import React, { useEffect } from "react";
+import Home from './components/pages/HomePage/Home';
+import Checkout from './components/pages/RestaurantPage/CheckoutPage/Checkout';
+import Restaurant from './components/pages/RestaurantPage/Restaurant';
+import AdminData from './components/pages/AdminPage/AdminData';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/admin' exact component={AdminData} />
+        <Route path='/' exact component={Home} />
+        <Route path='/checkout' exact component={Checkout} />
+        <Route path='/:restaurantId' component={Restaurant} />
+      </Switch>
+    </Router>
   );
 }
 

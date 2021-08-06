@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.restaurant-list {
+  position: relative;
+  top: 70vh;
+  width: 90%;
+  margin: 5%;
+}
+.restaurant-list button {
+  width: 50%;
+  height: 100px;
+  background-color: rgba(251, 248, 248, 0.082);
+  color: rgb(255, 255, 255);
+  border: solid rgba(255, 255, 255, 0.623) 1px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.restaurant-list button:hover {
+  cursor: pointer;
+  background-color: rgba(251, 248, 248, 0.219);
+}

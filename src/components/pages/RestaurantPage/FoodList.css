@@ -1,0 +1,138 @@
+.order-container {
+  position: absolute;
+  right: 20px;
+  top: 20vh;
+  background-color: rgba(236, 236, 236, 0.678);
+  border-radius: 2px;
+  padding: 10px;
+  list-style-type: none;
+  width: 30vh;
+}
+
+.korpa-div {
+  border: solid black 1px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item-div {
+  padding: 5px;
+}
+.item-div button {
+  float: right;
+  margin-left: 5px;
+  width: 20px;
+}
+
+.total-div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.total-div p {
+  text-align: center;
+  border: solid black 1px;
+  padding: 5px;
+}
+
+.order-button button {
+  width: 100%;
+  height: 30px;
+}
+
+.food-item-container {
+  width: 80%;
+  margin-top: 20vh;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.modal-select {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%);
+}
+
+.modal-select select {
+  width: 100%;
+  height: 100%;
+}
+.modal-select select:hover {
+  cursor: pointer;
+}
+
+.modal-button {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%);
+  justify-content: space-between;
+}
+
+.modal-button button {
+  width: 50%;
+  height: 100%;
+}
+.modal-button button:hover {
+  cursor: pointer;
+}
+
+.topping-container {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+
+.topping {
+  padding: 5px;
+  border: solid black 1px;
+  height: 50px;
+  border-radius: 2px;
+  text-align: center;
+}
+.topping input {
+  margin: 5px;
+}
+
+.back-button {
+  width: 100%;
+  height: 30px;
+}
+
+@media screen and (max-width: 780px) {
+  .food-item-container {
+    position: relative;
+    width: 100%;
+    margin-top: 20vh;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .order-container {
+    position: relative;
+    background-color: rgba(236, 236, 236, 0.678);
+    border-radius: 2px;
+    padding: 10px;
+    right: 0;
+    list-style-type: none;
+    width: 100%;
+  }
+  .back-button {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+}

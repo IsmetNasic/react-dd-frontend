@@ -1,0 +1,12 @@
+.checkout-ul {
+  color: rgb(250, 251, 251);
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+.checkout-form {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
